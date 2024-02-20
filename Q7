@@ -1,0 +1,45 @@
+	programa {//Q7
+
+		funcao inicio() {
+
+		// Declaraçao das variáveis
+		cadeia nome_produto
+		inteiro quantidade
+		real preco_unitario, total, desconto, valor_final
+
+		// Leitura da descriçao do produto
+		escreva("Digite a descriçao do produto: ")
+		leia(nome_produto)
+
+		// Leitura da quantidade adquirida
+		escreva("Digite a quantidade adquirida: ")
+		leia(quantidade)
+
+		// Leitura do preço unitário
+		escreva("Digite o preço unitário: R$ ")
+		leia(preco_unitario)
+
+		// Cálculo do total
+		total = quantidade * preco_unitario
+
+		// Cálculo do desconto
+		se (quantidade <= 5)  {
+ 		   desconto = total * 0.02
+		}
+		senao se (quantidade > 5) (quantidade <= 10) {
+  		  desconto = total * 0.03
+		}
+		senao {
+    		desconto = total * 0.05
+		}
+
+		// Cálculo do valor final
+		valor_final = total - desconto
+	
+		// Impressao do total, desconto e valor final
+		escreva("Total: R$", total)
+		escreva("Desconto: R$", desconto)
+		escreva("Valor final: R$", valor_final)
+
+	}
+}
