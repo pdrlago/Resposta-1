@@ -1,0 +1,46 @@
+	programa { //Q4
+
+		funcao inicio() {
+			
+		// Declaraçao das variáveis
+		real quantidade_morango, quantidade_maca, preco_morango, preco_maca, valor_total, desconto, valor_final
+
+		// Leitura da quantidade de morangos
+		escreva("Digite a quantidade de morangos (em Kg): ")
+		leia(quantidade_morango)
+
+		// Leitura da quantidade de maças
+		escreva("Digite a quantidade de maças (em Kg): ")
+		leia(quantidade_maca)
+
+		// Cálculo do preço do morango
+		se (quantidade_morango <= 5) {
+  		  preco_morango = 2.50
+		senao
+   		 preco_morango = 2.20
+		}
+
+		// Cálculo do preço da maça
+		se (quantidade_maca <= 5) {
+  		  preco_maca = 1.80
+		senao
+   		 preco_maca = 1.50
+		}
+
+		// Cálculo do valor total
+		valor_total = (quantidade_morango * preco_morango) + (quantidade_maca * preco_maca)
+
+		// Cálculo do desconto
+		se (valor_total > 25.00) ou (quantidade_morango + quantidade_maca > 8.00) entao
+  		  desconto = valor_total * 0.10
+		senao
+  		  desconto = 0.00
+		}
+
+		// Cálculo do valor final
+		valor_final = valor_total - desconto
+
+		// Impressao do valor final
+		escreva("O valor final da compra é: R$", valor_final)
+	}
+}
