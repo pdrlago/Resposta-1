@@ -1,0 +1,58 @@
+	programa { //Q10
+
+		funcao inicio() {
+			// Declaraçao das variáveis
+			cadeia tipo_combustivel
+			real preco_litro, desconto, valor_total, valor_final
+			inteiro litros
+
+			// Leitura do tipo de combustível
+			escreva("Digite o tipo de combustível (A-álcool, G-gasolina): ")
+			leia(tipo_combustivel)
+
+			// Leitura da quantidade de litros
+			escreva("Digite a quantidade de litros: ")
+			leia(litros)
+
+			// Cálculo do preço do litro
+			se (tipo_combustivel == "A") {
+   		 		preco_litro = 3.79
+			}
+			se (tipo_combustivel == "G") {
+   			 	preco_litro = 6.59
+			}
+		
+
+			// Cálculo do desconto
+			se (tipo_combustivel == "A") {
+			}
+    			se (litros <= 25) {
+       		 desconto = preco_litro * 0.02
+    			}
+   		     senao{
+     		 desconto = preco_litro * 0.04
+			}
+			
+			senao se (tipo_combustivel == "G") {
+			}
+    			se (litros <= 25) { 
+      	  	desconto = preco_litro * 0.03
+    			}			
+   		 	senao {
+     	  	desconto = preco_litro * 0.05
+   		 	}
+	
+
+
+			// Cálculo do valor total
+			valor_total = litros * (preco_litro - desconto)
+
+			// Cálculo do valor final
+			valor_final = valor_total
+
+			// Impressao do valor a ser pago
+			escreva("O valor a ser pago é: R$", valor_final)
+
+			}
+	
+	}
