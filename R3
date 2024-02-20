@@ -1,0 +1,27 @@
+programa {
+
+	funcao inicio() {
+
+		// Declaração das variáveis
+		inteiro a, b, c
+
+
+		// Leitura dos valores
+		escreva("Digite o valor de A: ")
+		leia(a)
+		escreva("Digite o valor de B: ")
+		leia(b)
+
+		// Verificação se os valores são iguais
+		se (a == b)
+   		// Soma dos valores
+  	  	c = a + b
+		senao
+  	  	// Multiplicação dos valores
+  	  	c = a * b
+	
+
+		// Impressão do resultado
+		escreva("O valor de C é: ", c)
+	}
+}
