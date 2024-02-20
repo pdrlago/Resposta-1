@@ -1,0 +1,30 @@
+	programa { //R6
+
+		funcao inicio() {
+			
+		// Declaraçao das variáveis
+		real nota1, nota2, media
+
+		// Leitura da primeira nota
+		escreva("Digite a primeira nota: ")
+		leia(nota1)
+
+		// Leitura da segunda nota
+		escreva("Digite a segunda nota: ")
+		leia(nota2)
+
+		// Cálculo da média
+		media = (nota1 + nota2) / 2
+
+		// Verificaçao da média e exibiçao da mensagem
+		se (media >= 6.0) {
+		    escreva("Parabéns! Você foi aprovado com média ", media)
+		}
+		senao se (media >= 4.0) {
+ 		   escreva("Você está em recuperaçao com média ", media)
+		}
+		senao 
+		    escreva("Você foi reprovado com média ", media)
+		}
+
+	}
