@@ -1,0 +1,34 @@
+programa
+ {
+ //Faça um algoritmo que leia os valores A, B, C e imprima na tela se a soma de A + B é menor  que C
+		//Caso contrário, imprima que a A + B é maior que C. 
+	
+	funcao inicio()
+ {
+	
+		inteiro a, b, c, soma
+
+		escreva("Informe A: ")
+		leia(a)
+		escreva("Informe B: ")
+		leia(b)
+		escreva("Informe C: ")
+		leia(c)
+
+		soma = a + b
+
+		se((a+b)<c)
+		//escreva("A soma de ",a ,'+' ,b, " é menor que ", c)
+		escreva("A soma de A+B é menor que C !! ")
+
+		se((a+b)>c)
+		escreva("A soma de A+B é maior que C !! ")
+		
+
+		
+		
+
+
+		
+	}
+}
