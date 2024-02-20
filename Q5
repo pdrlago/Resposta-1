@@ -1,0 +1,36 @@
+	programa { //Q5
+
+		funcao inicio() {
+		// Declaraçao das variáveis
+		cadeia operacao
+		inteiro a, b, resultado
+
+		// Leitura da operaçao
+		escreva("Digite a operaçao (+, -, *, /): ")
+		leia(operacao)
+
+		// Leitura dos valores A e B
+		escreva("Digite o valor de A: ")
+		leia(a)
+
+		escreva("Digite o valor de B: ")
+		leia(b)
+
+		// Cálculo do resultado
+		se (operacao == "+") {
+		    resultado = a + b
+		}
+		senao se (operacao == "-") {
+ 		   resultado = a - b
+		}
+		 se (operacao == "*") {
+ 		   resultado = a * b
+		 }
+		senao se (operacao == "/") {
+ 		   resultado = a / b
+		}
+
+		// Impressao do resultado
+		escreva("O resultado da operaçao é: ", resultado)
+   }
+}
