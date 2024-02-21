@@ -1,15 +1,13 @@
-	programa { //Q5
+	programa { //R5
 
 		funcao inicio() {
 		// Declaraçao das variáveis
 		cadeia operacao
-		inteiro a, b, resultado
+		inteiro a, b, resultado = 0
 
-		// Leitura da operaçao
 		escreva("Digite a operaçao (+, -, *, /): ")
 		leia(operacao)
 
-		// Leitura dos valores A e B
 		escreva("Digite o valor de A: ")
 		leia(a)
 
@@ -32,5 +30,6 @@
 
 		// Impressao do resultado
 		escreva("O resultado da operaçao é: ", resultado)
+		
    }
 }
