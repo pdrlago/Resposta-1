@@ -1,0 +1,41 @@
+	programa { //R8
+
+		funcao inicio() {
+			
+		// Declaraçao das variáveis		
+		cadeia cor
+		real preco=0
+
+		escreva("Digite a cor do CD: ")
+		leia(cor)
+
+		// Cor e preço
+		se (cor == "azul") {
+    		preco = 10.00
+		}
+		senao se (cor == "verde") {
+    		preco = 15.00
+		}
+		senao se (cor == "amarelo") {
+    		preco = 20.00
+		}
+		senao se (cor == "vermelho") {
+    		preco = 25.00
+		}
+		senao {
+    		escreva("Cor inválida!") 
+		}
+
+		// Impressao do preço
+		se (cor == "azul")
+		se (cor == "verde")
+		se (cor == "amarelo") 
+		se (cor == "vermelho") 
+    		escreva("O preço do CD é: R$", preco)
+    		escreva("O preço do CD é: R$", preco)
+    		escreva("O preço do CD é: R$", preco)
+    		escreva("O preço do CD é: R$", preco)
+		
+    	
+		}
+	}
