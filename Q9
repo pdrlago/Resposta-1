@@ -1,34 +1,32 @@
-	programa { //Q9
+	programa { //R9
 
 		funcao inicio() {
 		// Declaração das variáveis
-		real renda_mensal, valor_emprestimo, valor_prestacao, taxa_prestacao, 
+		real renda_mensal, valor_emprestimo, valor_prestacao, taxa_prestacao
 
-		// Leitura da renda mensal
+		// Renda mensal
 		escreva("Digite a renda mensal: R$ ")
 		leia(renda_mensal)
 
-		// Leitura do valor do empréstimo
 		escreva("Digite o valor do empréstimo: R$ ")
 		leia(valor_emprestimo)
 
-		// Leitura do número de prestações
 		escreva("Digite o número de prestações: ")
-		leia(taxa_prestacoes)
+		leia(taxa_prestacao)
 
-		// Cálculo da taxa de prestação
+		// Cálculo 
 		taxa_prestacao = 30 / 100
 
-		// Cálculo do valor da prestação
-		valor_prestacao = valor_emprestimo / taxa_prestacoes
+		valor_prestacao = valor_emprestimo / taxa_prestacao
 
-		// Verificação se o empréstimo pode ser concedido
-		se (valor_emprestimo <= renda_mensal * 10)  (valor_prestacao <= renda_mensal * taxa_prestacao) 
- 		   escreva("Empréstimo pode ser concedido!")
+		// Emprestimo pode ou não
+		se ((valor_emprestimo <= renda_mensal * 10) ou (valor_prestacao <= renda_mensal * taxa_prestacao)) 
+ 		   escreva("Empréstimo pode ser concedido! ")
 		
 		senao 
-   		 escreva("Empréstimo não pode ser concedido.")
-			 }
+   		escreva("Empréstimo não pode ser concedido. ") 
+		
+			 
 
    		
 	}
